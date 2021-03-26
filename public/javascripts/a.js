@@ -37,7 +37,7 @@ app = new Vue({
 	methods: {
                 doCopy: function() {
                     this.$copyText(this.enurl).then(function (e) {
-                        $('#liveToast').toast('show')
+                        $('#liveToast').toast().toast('show');
                     }, function (e) {
                         
                     });
