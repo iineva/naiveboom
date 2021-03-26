@@ -35,6 +35,13 @@ app = new Vue({
 		}
 	},
 	methods: {
+                doCopy: function() {
+                    this.$copyText(this.enurl).then(function (e) {
+                        modal.show('复制成功', '完成');
+                    }, function (e) {
+                        
+                    });
+                },
 		getTempURL: function() {
 			$("#enurl").loading({
 				message: '加载中...',
