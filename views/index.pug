@@ -15,8 +15,8 @@ block content
                     <p v-if="enurl">
                         |可以把这个网址分享给你的朋友：
                         <span id='enurl'>{{ enurl }}</span>
+                        <button v-on:click='doCopy' class="btn btn-info getbtn">复制</button>
                     </p>
-                    <button v-if="enurl" v-on:click='doCopy' class="btn btn-info getbtn">复制</button>
                 </transition>
             </div>
         </div>
